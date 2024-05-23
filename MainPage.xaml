@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIReflectionTask.MainPage">
+
+    <ScrollView>
+        <HorizontalStackLayout>
+            <VerticalStackLayout
+                x:Name="formContainer"
+                MinimumWidthRequest="200"
+                Margin="15, 15">
+
+                <Label 
+                    FontSize="24"
+                    Text="Form"
+                    FontAttributes="Bold" />
+
+                <Label 
+                    x:Name="infoLabel" 
+                    Margin="5,5" />
+
+                <VerticalStackLayout
+                    x:Name="fields" />
+
+                <Button
+                    x:Name="createBtn"
+                    Text="Create" />
+
+
+            </VerticalStackLayout>
+
+            <VerticalStackLayout
+                Margin="15,15">
+                <Label 
+                    FontSize="24"
+                    Text="Products"
+                    FontAttributes="Bold" />
+
+                <VerticalStackLayout
+                    x:Name="productsList" />
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+    </ScrollView>
+
+</ContentPage>
